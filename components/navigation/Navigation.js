@@ -284,12 +284,14 @@ export default function Example() {
 
               <div className="border-t border-lightgreen py-6 px-4 space-y-6">
                 <div className="flow-root">
-                  <a
-                    href="#"
-                    className="-m-2 p-2 block font-medium text-darkgreen"
-                  >
-                    FAQ
-                  </a>
+                  <Link href="/faq">
+                    <a
+                      href="#"
+                      className="-m-2 p-2 block font-medium text-darkgreen"
+                    >
+                      FAQ
+                    </a>
+                  </Link>
                 </div>
                 <div className="flow-root">
                   <a
@@ -347,13 +349,14 @@ export default function Example() {
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch ">
                 <div className="h-full flex space-x-8">
                   {navigation.pages.map((page) => (
-                    <a
-                      key={page.name}
-                      href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      {page.name}
-                    </a>
+                    <Link href={`/${page.href}`}>
+                      <a
+                        key={page.name}
+                        className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      >
+                        {page.name}
+                      </a>
+                    </Link>
                   ))}
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex ">
@@ -462,12 +465,12 @@ export default function Example() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a
-                    href="#"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    FAQ
-                  </a>
+                  <Link href="/faq">
+                    <a className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                      FAQ
+                    </a>
+                  </Link>
+
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   <a
                     href="#"

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import MainHero from '../components/mainHero/MainHero'
 import MainContent from '../components/mainContent/MainContent'
 import NewestItems from '../components/newestItems/NewestItems'
+import AboutUs from '../components/aboutUs/AboutUs'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <MainHero />
       <NewestItems />
       <MainContent />
+      <AboutUs />
     </>
   )
 }

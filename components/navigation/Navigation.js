@@ -294,12 +294,11 @@ export default function Example() {
                   </Link>
                 </div>
                 <div className="flow-root">
-                  <a
-                    href="#"
-                    className="-m-2 p-2 block font-medium text-darkgreen"
-                  >
-                    Contact Us
-                  </a>
+                  <Link href="/contactUs">
+                    <a className="-m-2 p-2 block font-medium text-darkgreen">
+                      Contact Us
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -469,12 +468,11 @@ export default function Example() {
                   </Link>
 
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <a
-                    href="#"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    Contact Us
-                  </a>
+                  <Link href="/contactUs">
+                    <a className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                      Contact Us
+                    </a>
+                  </Link>
                 </div>
 
                 {/* Cart */}

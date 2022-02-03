@@ -20,15 +20,15 @@ function MainContent() {
             Are you ready to embrace your love of plants with a design feature
             that will wow your guests? Check out the moss wall installation and
             design services from Om Grown. Our veteran owned and woman operated
-            company provides custom moss decor in Fort Collins, CO. If you're as
-            passionate about plants as we are, a custom moss wall will be sure
-            to brighten your days.
+            company provides custom moss decor in Fort Collins, CO. If
+            you&apos;re as passionate about plants as we are, a custom moss wall
+            will be sure to brighten your days.
           </p>
           <p className="mt-6 w-full  border border-transparent rounded-md py-3 px-8 font-medium text-copy  sm:w-auto mb-6">
-            Whether you're looking for a design accent or a large-scale art
-            installation, we can create dreamy, natural art you'll love. Call
-            803-640-7956 today to learn more about our moss walls. We offer a
-            10-20% discount for military, service and front line workers.
+            Whether you&apos;re looking for a design accent or a large-scale art
+            installation, we can create dreamy, natural art you&apos;ll love.
+            Call 803-640-7956 today to learn more about our moss walls. We offer
+            a 10-20% discount for military, service and front line workers.
           </p>
         </div>
       </section>

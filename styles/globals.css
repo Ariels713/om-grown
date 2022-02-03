@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Brand;
+  font-family: "Brand";
   src: url("/fonts/brand/Brand.ttf");
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }

@@ -3,9 +3,9 @@ import React from "react"
 function MainHero() {
   return (
     <>
-      <section aria-labelledby="cause-heading">
+      <section aria-labelledby="cause-heading isolate z-0">
         <div className="relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden isolate z-0">
             <img
               src="https://i0.wp.com/mosslovers.com/wp-content/uploads/2019/12/3ACAA3E5-C76C-409A-B24F-15BCE4AAD1D7-scaled.jpeg?fit=2560%2C1707&ssl=1"
               alt="moss wall art"

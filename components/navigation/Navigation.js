@@ -6,6 +6,7 @@ import ShoppingBag from "./ShoppingBag"
 import ExitIcon from "./ExitIcon"
 import OmLogo from "./OMLogo"
 import OmGrownFont from "./OmGrownFont"
+import MainHero from "../mainHero/MainHero"
 
 const navigation = {
   categories: [
@@ -259,7 +260,7 @@ export default function Example() {
 
         <nav
           aria-label="Top"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 "
         >
           <div className="border-b border-lightgreen">
             <div className="h-16 flex items-center">
@@ -279,13 +280,13 @@ export default function Example() {
                   <span className="sr-only">OM-Grown Logo</span>
                   <OmLogo />
                 </a>
-                <p className="text-darkgreen text-4xl ml-4">OM-GROWN</p>
+                {/* <p className="text-darkgreen text-4xl ml-4">OM-GROWN</p> */}
                 <OmGrownFont />
               </div>
 
               {/* Flyout menus */}
 
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch ">
                 <div className="h-full flex space-x-8">
                   {navigation.pages.map((page) => (
                     <a
@@ -297,10 +298,10 @@ export default function Example() {
                     </a>
                   ))}
                   {navigation.categories.map((category) => (
-                    <Popover key={category.name} className="flex">
+                    <Popover key={category.name} className="flex ">
                       {({ open }) => (
                         <>
-                          <div className="relative flex">
+                          <div className="relative flex ">
                             <Popover.Button
                               className={classNames(
                                 open

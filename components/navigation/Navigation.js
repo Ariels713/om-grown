@@ -133,7 +133,7 @@ const navigation = {
   ],
   pages: [
     { name: "About Us", href: "aboutUs" },
-    { name: "Gallery", href: "#" },
+    { name: "Gallery", href: "gallery" },
   ],
 }
 
@@ -191,12 +191,11 @@ export default function Example() {
               <div className="border-t border-lightgreen py-6 px-4 space-y-6">
                 {navigation.pages.map((page) => (
                   <div key={page.name} className="flow-root">
-                    <a
-                      href={page.href}
-                      className="-m-2 p-2 block font-medium text-darkgreen"
-                    >
-                      {page.name}
-                    </a>
+                    <Link href={`/${page.name}`}>
+                      <a className="-m-2 p-2 block font-medium text-darkgreen">
+                        {page.name}
+                      </a>
+                    </Link>
                   </div>
                 ))}
               </div>

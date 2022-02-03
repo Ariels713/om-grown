@@ -14,31 +14,31 @@ const faqs = [
       "Living walls are made up of plants that require irrigation and proper light requirements to thrive. These walls can be expensive and require ongoing maintenance. Preserved moss walls are cost effective and low maintenance (although some will need to be misted in dry climates) and do not require special lighting. No green thumb necessary!",
   },
   {
-    id: 1,
+    id: 3,
     question: "Is It Read Moss",
     answer:
       "Yes! The moss is real and has undergone a delicate process to be preserved.",
   },
   {
-    id: 1,
+    id: 4,
     question: "How long does it last?",
     answer:
       "The pieces will last anywhere between 5-10 years depending on the humidity levels and lighting within the space. We guarantee our pieces, and will send replacement moss or (if you're in the Colorado area) we will come to you for a free touch up!",
   },
   {
-    id: 1,
+    id: 5,
     question: "Does it need water or sunlight?",
     answer:
       "No! All of our pieces are to be kept out of direct sunlight and require no watering. A normal light dusting every now and again will do! Our pieces are for indoor use only, but we have amazing referrals for you if you're interested in an outdoor living wall!",
   },
   {
-    id: 1,
+    id: 6,
     question: "Are there different color options?",
     answer:
       "Of course! Our color options range from natural colors of lush shades of greens to all the colors of the rainbow! We recently did an 8.5 ft. tall piece with ocean blues that we are obsessed with!",
   },
   {
-    id: 1,
+    id: 7,
     question: "Will you install the piece?",
     answer:
       "We sure will! We will gladly install your mossterpiece depending on the size of the project and where you're located. If we are shipping a piece, hardware will be included to install.",

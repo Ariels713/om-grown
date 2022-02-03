@@ -1,9 +1,11 @@
+import Head from "next/head"
 import { Fragment, useState } from "react"
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react"
 import MenuIcon from "./MenuIcon"
 import ShoppingBag from "./ShoppingBag"
 import ExitIcon from "./ExitIcon"
 import OmLogo from "./OMLogo"
+import OmGrownFont from "./OmGrownFont"
 
 const navigation = {
   categories: [
@@ -63,15 +65,15 @@ const navigation = {
             { name: "The Scotts", href: "#" },
           ],
         },
-        {
-          id: "custom",
-          name: "Custom Pojects",
-          items: [
-            { name: "The Navy Yard", href: "#" },
-            { name: "The Gallaria", href: "#" },
-            { name: "La Sennica", href: "#" },
-          ],
-        },
+        // {
+        //   id: "custom",
+        //   name: "Custom Pojects",
+        //   items: [
+        //     { name: "The Navy Yard", href: "#" },
+        //     { name: "The Gallaria", href: "#" },
+        //     { name: "La Sennica", href: "#" },
+        //   ],
+        // },
       ],
     },
   ],
@@ -132,12 +134,12 @@ export default function Example() {
               </div>
 
               {/* Links */}
-              <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+              <div className="border-t border-lightgreen py-6 px-4 space-y-6">
                 {navigation.pages.map((page) => (
                   <div key={page.name} className="flow-root">
                     <a
                       href={page.href}
-                      className="-m-2 p-2 block font-medium text-gray-900"
+                      className="-m-2 p-2 block font-medium text-darkgreen"
                     >
                       {page.name}
                     </a>
@@ -145,7 +147,7 @@ export default function Example() {
                 ))}
               </div>
               <Tab.Group as="div" className="mt-2">
-                <div className="border-b border-gray-200">
+                <div className="border-b border-lightgreen">
                   <Tab.List className="-mb-px flex px-4 space-x-8">
                     {navigation.categories.map((category) => (
                       <Tab
@@ -154,7 +156,7 @@ export default function Example() {
                           classNames(
                             selected
                               ? "text-indigo-600 border-indigo-600"
-                              : "text-gray-900 border-transparent",
+                              : "text-darkgreen border-transparent",
                             "flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium"
                           )
                         }
@@ -185,7 +187,7 @@ export default function Example() {
                             </div>
                             <a
                               href={item.href}
-                              className="mt-6 block font-medium text-gray-900"
+                              className="mt-6 block font-medium text-darkgreen"
                             >
                               <span
                                 className="absolute z-10 inset-0"
@@ -193,9 +195,6 @@ export default function Example() {
                               />
                               {item.name}
                             </a>
-                            <p aria-hidden="true" className="mt-1">
-                              Shop now
-                            </p>
                           </div>
                         ))}
                       </div>
@@ -203,7 +202,7 @@ export default function Example() {
                         <div key={section.name}>
                           <p
                             id={`${category.id}-${section.id}-heading-mobile`}
-                            className="font-medium text-gray-900"
+                            className="font-medium text-darkgreen"
                           >
                             {section.name}
                           </p>
@@ -230,11 +229,11 @@ export default function Example() {
                 </Tab.Panels>
               </Tab.Group>
 
-              <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+              <div className="border-t border-lightgreen py-6 px-4 space-y-6">
                 <div className="flow-root">
                   <a
                     href="#"
-                    className="-m-2 p-2 block font-medium text-gray-900"
+                    className="-m-2 p-2 block font-medium text-darkgreen"
                   >
                     FAQ
                   </a>
@@ -242,7 +241,7 @@ export default function Example() {
                 <div className="flow-root">
                   <a
                     href="#"
-                    className="-m-2 p-2 block font-medium text-gray-900"
+                    className="-m-2 p-2 block font-medium text-darkgreen"
                   >
                     Contact Us
                   </a>
@@ -262,7 +261,7 @@ export default function Example() {
           aria-label="Top"
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
-          <div className="border-b border-gray-200">
+          <div className="border-b border-lightgreen">
             <div className="h-16 flex items-center">
               <button
                 type="button"
@@ -281,6 +280,7 @@ export default function Example() {
                   <OmLogo />
                 </a>
                 <p className="text-darkgreen text-4xl ml-4">OM-GROWN</p>
+                <OmGrownFont />
               </div>
 
               {/* Flyout menus */}
@@ -347,7 +347,7 @@ export default function Example() {
                                           </div>
                                           <a
                                             href={item.href}
-                                            className="mt-6 block font-medium text-gray-900"
+                                            className="mt-6 block font-medium text-darkgreen"
                                           >
                                             <span
                                               className="absolute z-10 inset-0"
@@ -355,12 +355,6 @@ export default function Example() {
                                             />
                                             {item.name}
                                           </a>
-                                          <p
-                                            aria-hidden="true"
-                                            className="mt-1"
-                                          >
-                                            Shop now
-                                          </p>
                                         </div>
                                       ))}
                                     </div>
@@ -369,7 +363,7 @@ export default function Example() {
                                         <div key={section.name}>
                                           <p
                                             id={`${section.name}-heading`}
-                                            className="font-medium text-gray-900"
+                                            className="font-medium text-darkgreen"
                                           >
                                             {section.name}
                                           </p>

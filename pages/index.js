@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>OM-GROWN</title>
         <meta name='description' content='Css Documentation and examples' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.svg' />
       </Head>
       <MainHero />
       <NewestItems />

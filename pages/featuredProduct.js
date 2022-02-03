@@ -1,20 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 import PlusIcon from "../components/newestItems/PlusIcon"
 import MinusIcon from "../components/newestItems/MinusIcon"
 import { useState } from "react"
@@ -29,11 +12,28 @@ const product = {
   images: [
     {
       id: 1,
-      name: "Angled view",
+      name: "Side View",
       src: "https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      alt: "Angled front view with bag zipped and handles upright.",
+      alt: "Image of Terrarium",
     },
-    // More images...
+    {
+      id: 2,
+      name: "Upper View",
+      src: "https://images.pexels.com/photos/1466434/pexels-photo-1466434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      alt: "Image of Terrarium",
+    },
+    {
+      id: 1,
+      name: "Side View",
+      src: "https://images.pexels.com/photos/4650144/pexels-photo-4650144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      alt: "Image of Terrarium",
+    },
+    {
+      id: 2,
+      name: "Upper View",
+      src: "https://images.pexels.com/photos/4650143/pexels-photo-4650143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      alt: "Image of Terrarium",
+    },
   ],
   colors: [
     {
@@ -55,50 +55,27 @@ const product = {
     {
       name: "Features",
       items: [
-        "Multiple strap configurations",
-        "Spacious interior with top zip",
-        "Leather handle and tabs",
-        "Interior dividers",
-        "Stainless strap loops",
-        "Double stitched construction",
-        "Water-resistant",
+        "Living Plants and Moss",
+        "Assembled by hand",
+        "Light Care",
+        "Minimal Sun exposure",
       ],
     },
     {
       name: "Care",
-      items: [
-        "Multiple strap configurations",
-        "Spacious interior with top zip",
-        "Leather handle and tabs",
-        "Interior dividers",
-        "Stainless strap loops",
-        "Double stitched construction",
-        "Water-resistant",
-      ],
+      items: ["Water Once Weekly", "Spray with water", "Do Not Eat"],
     },
     {
       name: "Shipping",
       items: [
-        "Multiple strap configurations",
-        "Spacious interior with top zip",
-        "Leather handle and tabs",
-        "Interior dividers",
-        "Stainless strap loops",
-        "Double stitched construction",
-        "Water-resistant",
+        "Shipped in a cloud container",
+        "Shipped Via FedEX",
+        "Overnight Shipping Available",
       ],
     },
     {
       name: "Returns",
-      items: [
-        "Multiple strap configurations",
-        "Spacious interior with top zip",
-        "Leather handle and tabs",
-        "Interior dividers",
-        "Stainless strap loops",
-        "Double stitched construction",
-        "Water-resistant",
-      ],
+      items: ["Beets, Bears, Battlestar Galactica "],
     },
     // More sections...
   ],
@@ -246,7 +223,25 @@ export default function Example() {
                         >
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li key={item}>{item}</li>
+                              <li key={item}>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="12"
+                                  height="12"
+                                  viewBox="0 0 12 12"
+                                  style={{ display: "inline-block" }}
+                                  className="mr-4"
+                                >
+                                  <title>check</title>
+                                  <g fill="#000000">
+                                    <path
+                                      d="M10.293,1.293,4,7.586,1.707,5.293A1,1,0,0,0,.293,6.707l3,3a1,1,0,0,0,1.414,0l7-7a1,1,0,0,0-1.414-1.414Z"
+                                      fill="#000000"
+                                    ></path>
+                                  </g>
+                                </svg>
+                                {item}
+                              </li>
                             ))}
                           </ul>
                         </Disclosure.Panel>

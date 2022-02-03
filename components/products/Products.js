@@ -1,11 +1,11 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Link from "next/link"
 const products = [
   {
     id: 1,
     name: "Potted Plants",
     color: "Natural",
     price: "$25",
-    href: "#",
+    href: "/shopnow",
     imageSrc:
       "https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     imageAlt: "Hand stitched, orange leather long wallet.",
@@ -15,7 +15,7 @@ const products = [
     name: "Cactus",
     color: "Natural",
     price: "$25",
-    href: "#",
+    href: "/shopnow",
     imageSrc:
       "https://images.pexels.com/photos/595103/pexels-photo-595103.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     imageAlt: "Hand stitched, orange leather long wallet.",
@@ -25,7 +25,7 @@ const products = [
     name: "Vases",
     color: "Natural",
     price: "$15",
-    href: "#",
+    href: "/shopnow",
     imageSrc:
       "https://images.pexels.com/photos/1266302/pexels-photo-1266302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     imageAlt: "Hand stitched, orange leather long wallet.",
@@ -35,7 +35,7 @@ const products = [
     name: "Moss Plants",
     color: "Natural",
     price: "$35",
-    href: "#",
+    href: "/shopnow",
     imageSrc:
       "https://images.pexels.com/photos/796620/pexels-photo-796620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     imageAlt: "Hand stitched, orange leather long wallet.",
@@ -52,7 +52,7 @@ export default function Example() {
             Trending products
           </h2>
           <a
-            href="#"
+            href="/shopnow"
             className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block"
           >
             Shop the collection<span aria-hidden="true"> &rarr;</span>
@@ -70,10 +70,12 @@ export default function Example() {
                 />
               </div>
               <h3 className="mt-4 text-sm text-gray-700">
-                <a href={product.href}>
-                  <span className="absolute inset-0" />
-                  {product.name}
-                </a>
+                <Link href={`/${product.href}`}>
+                  <a>
+                    <span className="absolute inset-0" />
+                    {product.name}
+                  </a>
+                </Link>
               </h3>
               <p className="mt-1 text-sm text-gray-500">{product.color}</p>
               <p className="mt-1 text-sm font-medium text-gray-900">

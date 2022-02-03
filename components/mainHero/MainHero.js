@@ -1,4 +1,4 @@
-import React from "react"
+import Link from "next/link"
 
 function MainHero() {
   return (
@@ -26,13 +26,11 @@ function MainHero() {
             <p className="mt-3 text-xl text-white">
               Get stunning moss wall art for your space in Fort Collins, CO
             </p>
-
-            <a
-              href="#"
-              className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
-            >
-              Read our story
-            </a>
+            <Link href="/aboutUs">
+              <a className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto">
+                Read our story
+              </a>
+            </Link>
           </div>
         </div>
       </section>

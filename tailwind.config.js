@@ -13,6 +13,7 @@ module.exports = {
       beige: "#d8ccc0",
       blue: "#0e8cb2",
       white: "#f8fafc",
+      copy: "#18181b",
     },
     extend: {},
   },

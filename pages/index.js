@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Om-Grown</title>
-        <meta name="description" content="Css Documentation and examples" />
+        <meta name="description" content="Om-Grown Ecommerce Store" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <MainHero />
